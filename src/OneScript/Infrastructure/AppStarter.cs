@@ -53,6 +53,8 @@ namespace OneScript.WebHost.Infrastructure
             libResolver.LibraryRoot = libRoot;
             if (additionals != null)
                 libResolver.SearchDirectories.AddRange(additionals);
+            else
+                _logger.LogInformation("Special library for app is not provided. Please add package.def and install libs from opm");
             
             engine.DirectiveResolvers.Add(libResolver);
         }
