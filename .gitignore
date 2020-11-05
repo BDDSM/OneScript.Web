@@ -22,3 +22,4 @@ src/OneScriptWeb.Infobase/bin
 src/OneScriptWeb.Infobase/obj
 
 artifact
+debug-application/oscript_modules
